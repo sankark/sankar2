@@ -1,0 +1,969 @@
+
+C:\zotonic-update>set erl=erl 
+
+C:\zotonic-update>rem set erl="C:\Program Files\erl5.7.4\bin\erl.exe" 
+
+C:\zotonic-update>set ebin=./ebin ./modules/mod_oauth/deps/erlang-oauth/ebin ./deps/mochiweb/ebin ./deps/webzmachine/ebin  
+
+C:\zotonic-update>erl +P 10000000 -pa ./ebin ./modules/mod_oauth/deps/erlang-oauth/ebin ./deps/mochiweb/ebin ./deps/webzmachine/ebin  -boot start_sasl -sasl errlog_type error -s zotonic 
+Eshell V5.9.1  (abort with ^G)
+1> ** ./ebin/zotonic.beam hides c:/zotonic-update/deps/seresye/ebin/zotonic.beam
+1> ** Found 1 name clashes in code paths 
+1> ** ./ebin/zotonic.beam hides c:/zotonic-update/deps/seresye/ebin/zotonic.beam
+1> ** Found 1 name clashes in code paths 
+1> 14:31:04.655 [info] Application lager started on node nonode@nohost
+1> 14:31:04.799 [info] Application seresye started on node nonode@nohost
+1> 14:31:05.186 [info] Application mnesia started on node nonode@nohost
+1> 14:31:05.199 [info] Application public_key started on node nonode@nohost
+1> 14:31:05.220 [info] Application ssl started on node nonode@nohost
+1> 14:31:05.383 [info] Application inets started on node nonode@nohost
+1> ** ./ebin/zotonic.beam hides c:/zotonic-update/deps/seresye/ebin/zotonic.beam
+1> ** Found 1 name clashes in code paths 
+1> opening log file: "c:/zotonic-update/priv/log/access.log.2012_08_21_13"
+1> 14:31:05.893 [info] gen_smtp_server starting at nonode@nohost
+
+1> 14:31:05.894 [info] listening on {0,0,0,0}:2525 via tcp
+
+1> 14:31:07.300 [info] Application zotonic started on node nonode@nohost
+1> 14:31:23.796 [info] [default] warning @ m_rsc:634  Failed to get page url path. Is the `page' dispatch rule missing?
+
+1> Cols [created,id,module,props,rsc_id,type,user_id] Props [{user_id,undefined},
+                                                          {type,warning},
+                                                          {message,
+                                                           <<"Failed to get page url path. Is the `page' dispatch rule missing?">>},
+                                                          {module,m_rsc},
+                                                          {line,634}]1> rops [{message,<<"Failed to get page url path. Is the `page' dispatch rule missing?">>},
+      {line,634}]1> Result [[{rule_name,<<"dfsf">>},
+         {pattern,<<"sdfsdf">>},
+         {condition,<<"dsfsdfsd">>},
+         {action,<<"sdfsdfsd">>},
+         {client_state,<<"sdfsdfsd">>}],
+        [{rule_name,<<"czxczxc">>},
+         {pattern,<<"zxczxczx">>},
+         {condition,<<"zxczxczx">>},
+         {action,<<"zxczczxczx">>},
+         {client_state,<<"zxczxzxczx">>}],
+        [{rule_name,<<"ytr">>},
+         {pattern,<<"ytrytr">>},
+         {condition,<<"rtytry">>},
+         {action,<<"trytr">>},
+         {client_state,<<"trytrytr">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{zotonic,test},{M,X}">>},
+         {condition,<<"M&gt;10">>},
+         {action,<<"[{assert,test}]">>},
+         {client_state,<<"hi">>}],
+        [{rule_name,<<"xczx">>},
+         {pattern,<<"{zxczx,X}">>},
+         {condition,<<"X&gt;10">>},
+         {action,<<"[{assert,X}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,hello}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"x&lt;10">>},
+         {action,<<"[{assert,succes}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,false}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,hello}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"test">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"hello">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,Y}">>},
+         {condition,<<"Y&lt;10">>},
+         {action,<<"[{assert,{hello}}]">>},
+         {client_state,<<"helloooooo">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"asdasdas">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"successssee">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"dummy">>}]]1> 14:31:34.667 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.668 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.669 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.669 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.670 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.671 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.672 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.672 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.673 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.674 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.674 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.677 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.678 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.680 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.681 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.682 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.684 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.686 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.688 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.688 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.688 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.689 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.689 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.690 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.690 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:34.690 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.069 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.069 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.070 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.070 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.070 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.071 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.071 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.072 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.072 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.072 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.073 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.074 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.074 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.074 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.075 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.075 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.075 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.076 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.076 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.077 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.077 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.077 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.078 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.078 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.078 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.079 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.079 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:31:35.079 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> inside postback {context,default,
+                    {wm_reqdata,#Port<0.10275>,
+                        {dict,4,16,16,8,80,48,
+                            {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                            {{[],[],[],
+                              [[ua_class|desktop],
+                               [ua_props,
+                                {is_user_select,true},
+                                {has_pointer,true}]],
+                              [[zotonic_host|default]],
+                              [[resource_module|resource_websocket]],
+                              [],[],[],[],[],[],[],[],[],[]}}},
+                        undefined,"127.0.0.1",undefined,
+                        {wm_log_data,1001345555895131053,undefined,
+                            {1345,555895,131054},
+                            'GET',
+                            {8,
+                             {"upgrade",
+                              {'Upgrade',"websocket"},
+                              {"connection",
+                               {'Connection',"Upgrade"},
+                               nil,
+                               {"host",
+                                {'Host',"127.0.0.1:8000"},
+                                {"cookie",
+                                 {'Cookie',
+                                     "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=Uy2m94tn8CpueUq9LiU6"},
+                                 nil,nil},
+                                {"origin",
+                                 {"Origin","http://127.0.0.1:8000"},
+                                 nil,
+                                 {"sec-websocket-key",
+                                  {"Sec-Websocket-Key",
+                                   "ElRyiq5cLWl+fO8YTWhWeg=="},
+                                  {"sec-websocket-extensions",
+                                   {"Sec-WebSocket-Extensions",
+                                    "x-webkit-deflate-frame"},
+                                   nil,nil},
+                                  {"sec-websocket-version",
+                                   {"Sec-WebSocket-Version","13"},
+                                   nil,nil}}}}},
+                              nil}},
+                            "127.0.0.1",
+                            "/websocket?z_pageid=HLV1I8gsURvdgx1Ix94U",
+                            {1,1},
+                            404,0,undefined,undefined},
+                        'GET',http,
+                        {1,1},
+                        [],"/websocket",
+                        "/websocket?z_pageid=HLV1I8gsURvdgx1Ix94U",
+                        {dict,2,16,16,8,80,48,
+                            {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                            {{[],[],[],[],
+                              [[zotonic_host|default]],
+                              [],[],[],
+                              [[zotonic_dispatch|websocket]],
+                              [],[],[],[],[],[],[]}}},
+                        [],".",500,1073741824,
+                        [{"m","34e2"},
+                         {"z_pid","Dosg0M7oCvKlPMR0TlMk"},
+                         {"z_ua",
+                          "c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024"},
+                         {"z_sid","Uy2m94tn8CpueUq9LiU6"}],
+                        [{"z_pageid","HLV1I8gsURvdgx1Ix94U"}],
+                        [{"connection","Upgrade"},
+                         {"cookie",
+                          "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=Uy2m94tn8CpueUq9LiU6"},
+                         {"host","127.0.0.1:8000"},
+                         {"origin","http://127.0.0.1:8000"},
+                         {"sec-websocket-extensions","x-webkit-deflate-frame"},
+                         {"sec-websocket-key","ElRyiq5cLWl+fO8YTWhWeg=="},
+                         {"sec-websocket-version","13"},
+                         {"upgrade","websocket"}],
+                        not_fetched_yet,false,
+                        {0,nil},
+                        <<>>,[],none,[]},
+                    resource_rules,<0.559.0>,<0.713.0>,"HLV1I8gsURvdgx1Ix94U",
+                    desktop,'z_depcache$default','z_notifier$default',
+                    'z_session_manager$default','z_dispatcher$default',
+                    'z_template$default','z_scomp$default',
+                    'z_dropbox$default','z_pivot_rsc$default',
+                    'z_module_indexer$default',81967,undefined,en,
+                    mod_acl_adminonly,1,[],[],[],[],[],[],[],
+                    [{q_validated,[]},
+                     {q,[{"postback",
+                          "iqkawKKahac-27GY-jr3OaMwXBWDaAVrAAZzdWJtaXRrAAhhZGRfcnVsZWsACGFkZF9ydWxlZAAIYWRkX3J1bGVkAA5yZXNvdXJjZV9ydWxlcw"},
+                         {"z_trigger_id","add_rule"},
+                         {"z_pageid","HLV1I8gsURvdgx1Ix94U"},
+                         {"rule_name","test"},
+                         {"pattern","{test,X}"},
+                         {"condition","X<10"},
+                         {"action","[{assert,{test}}]"},
+                         {"client_state","sed"},
+                         {"triggervalue",[]}]},
+                     {session_id,"Uy2m94tn8CpueUq9LiU6"},
+                     {zotonic_dispatch,websocket}]}1> 
+Tokens [{'[',1},
+        {'{',1},
+        {atom,1,assert},
+        {',',1},
+        {'{',1},
+        {atom,1,test},
+        {'}',1},
+        {'}',1},
+        {']',1},
+        {dot,1}]1> Cols [action,client_state,condition,pattern,rule_name] Props [{rule_name,
+                                                               <<"test">>},
+                                                              {pattern,
+                                                               <<"{test,X}">>},
+                                                              {condition,
+                                                               <<"X&lt;10">>},
+                                                              {action,
+                                                               <<"[{assert,{test}}]">>},
+                                                              {client_state,
+                                                               <<"sed">>}]1> rops []1> 14:32:14.800 [info] [default] warning @ m_rsc:634  Failed to get page url path. Is the `page' dispatch rule missing?
+
+1> Cols [created,id,module,props,rsc_id,type,user_id] Props [{user_id,undefined},
+                                                          {type,warning},
+                                                          {message,
+                                                           <<"Failed to get page url path. Is the `page' dispatch rule missing?">>},
+                                                          {module,m_rsc},
+                                                          {line,634}]1> rops [{message,<<"Failed to get page url path. Is the `page' dispatch rule missing?">>},
+      {line,634}]1> Result [[{rule_name,<<"dfsf">>},
+         {pattern,<<"sdfsdf">>},
+         {condition,<<"dsfsdfsd">>},
+         {action,<<"sdfsdfsd">>},
+         {client_state,<<"sdfsdfsd">>}],
+        [{rule_name,<<"czxczxc">>},
+         {pattern,<<"zxczxczx">>},
+         {condition,<<"zxczxczx">>},
+         {action,<<"zxczczxczx">>},
+         {client_state,<<"zxczxzxczx">>}],
+        [{rule_name,<<"ytr">>},
+         {pattern,<<"ytrytr">>},
+         {condition,<<"rtytry">>},
+         {action,<<"trytr">>},
+         {client_state,<<"trytrytr">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{zotonic,test},{M,X}">>},
+         {condition,<<"M&gt;10">>},
+         {action,<<"[{assert,test}]">>},
+         {client_state,<<"hi">>}],
+        [{rule_name,<<"xczx">>},
+         {pattern,<<"{zxczx,X}">>},
+         {condition,<<"X&gt;10">>},
+         {action,<<"[{assert,X}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,hello}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"x&lt;10">>},
+         {action,<<"[{assert,succes}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,false}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,hello}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"test">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,true}]">>},
+         {client_state,<<"hello">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,Y}">>},
+         {condition,<<"Y&lt;10">>},
+         {action,<<"[{assert,{hello}}]">>},
+         {client_state,<<"helloooooo">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"asdasdas">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"success">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{true}}]">>},
+         {client_state,<<"successssee">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"dummy">>}],
+        [{rule_name,<<"test">>},
+         {pattern,<<"{test,X}">>},
+         {condition,<<"X&lt;10">>},
+         {action,<<"[{assert,{test}}]">>},
+         {client_state,<<"sed">>}]]1> 14:32:21.697 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.708 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.708 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.709 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.709 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.710 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.710 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.710 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.711 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.711 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.712 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.712 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.712 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.713 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.713 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.713 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.714 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.714 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.714 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.715 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.715 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.716 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.716 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.717 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.717 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.717 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.720 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.721 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.721 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.721 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.722 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.722 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.722 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.723 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.723 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.723 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.725 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.725 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.725 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.726 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.726 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.726 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.727 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.727 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.727 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.728 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.728 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.729 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.729 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.729 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.730 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.730 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.730 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.731 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.731 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:21.732 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> inside postback {context,default,
+                    {wm_reqdata,#Port<0.12417>,
+                        {dict,4,16,16,8,80,48,
+                            {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                            {{[],[],[],
+                              [[ua_class|desktop],
+                               [ua_props,
+                                {is_user_select,true},
+                                {has_pointer,true}]],
+                              [[zotonic_host|default]],
+                              [[resource_module|resource_websocket]],
+                              [],[],[],[],[],[],[],[],[],[]}}},
+                        undefined,"127.0.0.1",undefined,
+                        {wm_log_data,1001345555942122285,undefined,
+                            {1345,555942,122286},
+                            'GET',
+                            {8,
+                             {"upgrade",
+                              {'Upgrade',"websocket"},
+                              {"connection",
+                               {'Connection',"Upgrade"},
+                               nil,
+                               {"host",
+                                {'Host',"127.0.0.1:8000"},
+                                {"cookie",
+                                 {'Cookie',
+                                     "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=GxKoXoxRokh9QQfgojv2"},
+                                 nil,nil},
+                                {"origin",
+                                 {"Origin","http://127.0.0.1:8000"},
+                                 nil,
+                                 {"sec-websocket-key",
+                                  {"Sec-Websocket-Key",
+                                   "qWHZcNkp4H2HFUfhAtvF/Q=="},
+                                  {"sec-websocket-extensions",
+                                   {"Sec-WebSocket-Extensions",
+                                    "x-webkit-deflate-frame"},
+                                   nil,nil},
+                                  {"sec-websocket-version",
+                                   {"Sec-WebSocket-Version","13"},
+                                   nil,nil}}}}},
+                              nil}},
+                            "127.0.0.1",
+                            "/websocket?z_pageid=HUkEakC90NreSLZM0azS",
+                            {1,1},
+                            404,0,undefined,undefined},
+                        'GET',http,
+                        {1,1},
+                        [],"/websocket",
+                        "/websocket?z_pageid=HUkEakC90NreSLZM0azS",
+                        {dict,2,16,16,8,80,48,
+                            {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                            {{[],[],[],[],
+                              [[zotonic_host|default]],
+                              [],[],[],
+                              [[zotonic_dispatch|websocket]],
+                              [],[],[],[],[],[],[]}}},
+                        [],".",500,1073741824,
+                        [{"m","34e2"},
+                         {"z_pid","Dosg0M7oCvKlPMR0TlMk"},
+                         {"z_ua",
+                          "c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024"},
+                         {"z_sid","GxKoXoxRokh9QQfgojv2"}],
+                        [{"z_pageid","HUkEakC90NreSLZM0azS"}],
+                        [{"connection","Upgrade"},
+                         {"cookie",
+                          "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=GxKoXoxRokh9QQfgojv2"},
+                         {"host","127.0.0.1:8000"},
+                         {"origin","http://127.0.0.1:8000"},
+                         {"sec-websocket-extensions","x-webkit-deflate-frame"},
+                         {"sec-websocket-key","qWHZcNkp4H2HFUfhAtvF/Q=="},
+                         {"sec-websocket-version","13"},
+                         {"upgrade","websocket"}],
+                        not_fetched_yet,false,
+                        {0,nil},
+                        <<>>,[],none,[]},
+                    resource_rules,<0.1065.0>,<0.1283.0>,
+                    "HUkEakC90NreSLZM0azS",desktop,'z_depcache$default',
+                    'z_notifier$default','z_session_manager$default',
+                    'z_dispatcher$default','z_template$default',
+                    'z_scomp$default','z_dropbox$default',
+                    'z_pivot_rsc$default','z_module_indexer$default',81967,
+                    undefined,en,mod_acl_adminonly,1,[],[],[],[],[],[],[],
+                    [{q_validated,[]},
+                     {q,[{"postback",
+                          "x3b5-voukJJc9T0DRluTMZAmHzKDaAVrAAZzdWJtaXRrAAR0ZXN0awAEdGVzdGQACGFkZF9ydWxlZAAOcmVzb3VyY2VfcnVsZXM"},
+                         {"z_trigger_id","test"},
+                         {"z_pageid","HUkEakC90NreSLZM0azS"},
+                         {"test_rule","{test,1}"},
+                         {"triggervalue",[]}]},
+                     {session_id,"GxKoXoxRokh9QQfgojv2"},
+                     {zotonic_dispatch,websocket}]}1> Test Rule Found "{test,1}"1> 
+ Client State [sed]1> new contex{context,default,
+              {wm_reqdata,#Port<0.12417>,
+                  {dict,4,16,16,8,80,48,
+                      {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                      {{[],[],[],
+                        [[ua_class|desktop],
+                         [ua_props,{is_user_select,true},{has_pointer,true}]],
+                        [[zotonic_host|default]],
+                        [[resource_module|resource_websocket]],
+                        [],[],[],[],[],[],[],[],[],[]}}},
+                  undefined,"127.0.0.1",undefined,
+                  {wm_log_data,1001345555942122285,undefined,
+                      {1345,555942,122286},
+                      'GET',
+                      {8,
+                       {"upgrade",
+                        {'Upgrade',"websocket"},
+                        {"connection",
+                         {'Connection',"Upgrade"},
+                         nil,
+                         {"host",
+                          {'Host',"127.0.0.1:8000"},
+                          {"cookie",
+                           {'Cookie',
+                               "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=GxKoXoxRokh9QQfgojv2"},
+                           nil,nil},
+                          {"origin",
+                           {"Origin","http://127.0.0.1:8000"},
+                           nil,
+                           {"sec-websocket-key",
+                            {"Sec-Websocket-Key","qWHZcNkp4H2HFUfhAtvF/Q=="},
+                            {"sec-websocket-extensions",
+                             {"Sec-WebSocket-Extensions",
+                              "x-webkit-deflate-frame"},
+                             nil,nil},
+                            {"sec-websocket-version",
+                             {"Sec-WebSocket-Version","13"},
+                             nil,nil}}}}},
+                        nil}},
+                      "127.0.0.1","/websocket?z_pageid=HUkEakC90NreSLZM0azS",
+                      {1,1},
+                      404,0,undefined,undefined},
+                  'GET',http,
+                  {1,1},
+                  [],"/websocket","/websocket?z_pageid=HUkEakC90NreSLZM0azS",
+                  {dict,2,16,16,8,80,48,
+                      {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                      {{[],[],[],[],
+                        [[zotonic_host|default]],
+                        [],[],[],
+                        [[zotonic_dispatch|websocket]],
+                        [],[],[],[],[],[],[]}}},
+                  [],".",500,1073741824,
+                  [{"m","34e2"},
+                   {"z_pid","Dosg0M7oCvKlPMR0TlMk"},
+                   {"z_ua",
+                    "c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024"},
+                   {"z_sid","GxKoXoxRokh9QQfgojv2"}],
+                  [{"z_pageid","HUkEakC90NreSLZM0azS"}],
+                  [{"connection","Upgrade"},
+                   {"cookie",
+                    "m=34e2:|3c0d:t|370d:t|6ef2:t; z_pid=Dosg0M7oCvKlPMR0TlMk; z_ua=c%3Ddesktop%26u%3D1%26t%3D1%26w%3D1280%26h%3D1024; z_sid=GxKoXoxRokh9QQfgojv2"},
+                   {"host","127.0.0.1:8000"},
+                   {"origin","http://127.0.0.1:8000"},
+                   {"sec-websocket-extensions","x-webkit-deflate-frame"},
+                   {"sec-websocket-key","qWHZcNkp4H2HFUfhAtvF/Q=="},
+                   {"sec-websocket-version","13"},
+                   {"upgrade","websocket"}],
+                  not_fetched_yet,false,
+                  {0,nil},
+                  <<>>,[],none,[]},
+              resource_rules,<0.1065.0>,<0.1283.0>,"HUkEakC90NreSLZM0azS",
+              desktop,'z_depcache$default','z_notifier$default',
+              'z_session_manager$default','z_dispatcher$default',
+              'z_template$default','z_scomp$default','z_dropbox$default',
+              'z_pivot_rsc$default','z_module_indexer$default',81967,
+              undefined,en,mod_acl_adminonly,1,[],[],[],[],[],[],[],
+              [{"test_result",["sed"]},
+               {q_validated,[]},
+               {q,[{"postback",
+                    "x3b5-voukJJc9T0DRluTMZAmHzKDaAVrAAZzdWJtaXRrAAR0ZXN0awAEdGVzdGQACGFkZF9ydWxlZAAOcmVzb3VyY2VfcnVsZXM"},
+                   {"z_trigger_id","test"},
+                   {"z_pageid","HUkEakC90NreSLZM0azS"},
+                   {"test_rule","{test,1}"},
+                   {"triggervalue",[]}]},
+               {session_id,"GxKoXoxRokh9QQfgojv2"},
+               {zotonic_dispatch,websocket}]}1> 14:32:36.033 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> Cols [created,id,module,props,rsc_id,type,user_id] Props [{user_id,1},
+                                                          {type,warning},
+                                                          {message,
+                                                           <<"error:{badrecord,context}\n[{z_script,get_script1,1,\n           [{file,\"c:/zotonic-update/src/support/z_script.erl\"},{line,102}]},\n {resource_postback,process_postback,1,\n                    [{file,\"modules/mod_base/resources/resource_postback.erl\"},\n                     {line,148}]},\n {resource_websocket,handle_message,2,\n                     [{file,\"modules/mod_base/resources/resource_websocket.erl\"},\n                      {line,99}]},\n {z_websocket_hybi17,handle_frame,5,\n                     [{file,\"modules/mod_base/support/z_websocket_hybi17.erl\"},\n                      {line,126}]},\n {webmachine_mochiweb,loop,2,\n                      [{file,\"src/webmachine_mochiweb.erl\"},{line,118}]},\n {mochiweb_http,headers,5,[{file,\"src/mochiweb_http.erl\"},{line,136}]},\n {proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,227}]}]">>},
+                                                          {module,
+                                                           resource_websocket},
+                                                          {line,102}]1> 14:32:36.041 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> rops [{message,<<"error:{badrecord,context}\n[{z_script,get_script1,1,\n           [{file,\"c:/zotonic-update/src/support/z_script.erl\"},{line,102}]},\n {resource_postback,process_postback,1,\n                    [{file,\"modules/mod_base/resources/resource_postback.erl\"},\n                     {line,148}]},\n {resource_websocket,handle_message,2,\n                     [{file,\"modules/mod_base/resources/resource_websocket.erl\"},\n                      {line,99}]},\n {z_websocket_hybi17,handle_frame,5,\n                     [{file,\"modules/mod_base/support/z_websocket_hybi17.erl\"},\n                      {line,126}]},\n {webmachine_mochiweb,loop,2,\n                      [{file,\"src/webmachine_mochiweb.erl\"},{line,118}]},\n {mochiweb_http,headers,5,[{file,\"src/mochiweb_http.erl\"},{line,136}]},\n {proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,227}]}]">>},
+      {line,102}]1> 14:32:36.042 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.116 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.117 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.117 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.117 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.118 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.118 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.119 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.119 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.119 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.120 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.120 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.121 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.121 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.121 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.122 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.122 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.122 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.123 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.123 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.123 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.124 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.124 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.124 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.125 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.125 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.126 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.126 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.126 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.127 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.127 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.127 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.128 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.128 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.129 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.129 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.130 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.130 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.130 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.131 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.131 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.132 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.132 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.132 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.133 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.133 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.134 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.134 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.134 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.135 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.135 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.135 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.136 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.136 [info] make_url_for: dispatch rule `admin_edit_rsc' failed when processing [{'Args',[]},{'Patterns',[{1,[id],["admin","edit",id]}]},{'Escape',html}].
+
+1> 14:32:36.137 [info] [default] warning @ resource_websocket:102  error:{badrecord,context}
+[{z_script,get_script1,1,
+           [{file,"c:/zotonic-update/src/support/z_script.erl"},{line,102}]},
+ {resource_postback,process_postback,1,
+                    [{file,"modules/mod_base/resources/resource_postback.erl"},
+                     {line,148}]},
+ {resource_websocket,handle_message,2,
+                     [{file,"modules/mod_base/resources/resource_websocket.erl"},
+                      {line,99}]},
+ {z_websocket_hybi17,handle_frame,5,
+                     [{file,"modules/mod_base/support/z_websocket_hybi17.erl"},
+                      {line,126}]},
+ {webmachine_mochiweb,loop,2,
+                      [{file,"src/webmachine_mochiweb.erl"},{line,118}]},
+ {mochiweb_http,headers,5,[{file,"src/mochiweb_http.erl"},{line,136}]},
+ {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,227}]}]
+
+1> webmachine_logger: closing log file: "c:/zotonic-update/priv/log/access.log.2012_08_21_13"
+1> opening log file: "c:/zotonic-update/priv/log/access.log.2012_08_21_14"
+1> webmachine_logger: closing log file: "c:/zotonic-update/priv/log/access.log.2012_08_21_14"
+1> opening log file: "c:/zotonic-update/priv/log/access.log.2012_08_21_15"
+1> 
